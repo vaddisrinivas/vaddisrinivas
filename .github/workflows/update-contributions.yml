@@ -1,0 +1,85 @@
+name: Update contributions
+
+on:
+  schedule:
+    - cron: '0 9 * * *'  # daily at 9am UTC
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch merged PRs and update README
+        run: |
+          # Fetch all merged PRs to other repos
+          MERGED=$(curl -s "https://api.github.com/search/issues?q=is:pr+author:vaddisrinivas+is:merged+-user:vaddisrinivas&per_page=100" \
+            -H "Accept: application/vnd.github.v3+json")
+
+          # Also check everything-claude-code for native port
+          ECC_EXISTS=$(curl -s "https://api.github.com/repos/affaan-m/everything-claude-code/contents/skills/code-tour/SKILL.md" \
+            -H "Accept: application/vnd.github.v3+json" | python3 -c "import sys,json; print('yes' if 'name' in json.load(sys.stdin) else 'no')")
+
+          # Build contributions table
+          python3 << 'PYEOF'
+          import json, os
+
+          with open(os.environ.get('MERGED_JSON', '/dev/stdin'), 'r') as f:
+              pass
+
+          # Read merged PRs from env
+          merged_json = os.popen('curl -s "https://api.github.com/search/issues?q=is:pr+author:vaddisrinivas+is:merged+-user:vaddisrinivas&per_page=100" -H "Accept: application/vnd.github.v3+json"').read()
+          data = json.loads(merged_json)
+
+          rows = []
+          for item in data.get('items', []):
+              repo = item['repository_url'].replace('https://api.github.com/repos/', '')
+              # Get star count
+              repo_json = os.popen(f'curl -s "https://api.github.com/repos/{repo}" -H "Accept: application/vnd.github.v3+json"').read()
+              repo_data = json.loads(repo_json)
+              stars = repo_data.get('stargazers_count', 0)
+              star_str = f" ({stars:,} stars)" if stars >= 100 else ""
+
+              rows.append(f"| **{repo}**{star_str} | {item['title'][:60]} | [PR #{item['number']}]({item['html_url']}) |")
+
+          # Check ECC native port
+          ecc_check = os.popen('curl -s "https://api.github.com/repos/affaan-m/everything-claude-code/contents/skills/code-tour/SKILL.md" -H "Accept: application/vnd.github.v3+json"').read()
+          if '"name"' in ecc_check:
+              rows.append("| **affaan-m/everything-claude-code** | code-tour skill — native port by maintainer | [da813d4](https://github.com/affaan-m/everything-claude-code/commit/da813d4) |")
+
+          # Read current README
+          with open('README.md', 'r') as f:
+              content = f.read()
+
+          # Build new table
+          table_header = "| Project | What | Link |\n|:--------|:-----|:-----|\n"
+          table = table_header + "\n".join(rows)
+
+          # Replace between markers
+          START = "<!-- CONTRIBUTIONS:START -->"
+          END = "<!-- CONTRIBUTIONS:END -->"
+          if START in content and END in content:
+              before = content[:content.index(START) + len(START)]
+              after = content[content.index(END):]
+              content = before + "\n" + table + "\n" + after
+          else:
+              print("No markers found, skipping update")
+              exit(0)
+
+          with open('README.md', 'w') as f:
+              f.write(content)
+
+          print(f"Updated {len(rows)} contributions")
+          PYEOF
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet README.md && echo "No changes" && exit 0
+          git add README.md
+          git commit -m "chore: auto-update contributions [skip ci]"
+          git push
