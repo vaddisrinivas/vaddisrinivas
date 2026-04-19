@@ -16,11 +16,11 @@
 | Project | What | Link |
 |:--------|:-----|:-----|
 | **xyNNN/awesome-chrome** (106 stars) | Add gTabs - AI Tab Organizer | [PR #31](https://github.com/xyNNN/awesome-chrome/pull/31) |
-| **alirezarezvani/claude-skills** (11,654 stars) | feat(engineering): add code-tour skill | [PR #476](https://github.com/alirezarezvani/claude-skills/pull/476) |
-| **alirezarezvani/claude-skills** (11,654 stars) | feat(engineering): add demo-video skill | [PR #475](https://github.com/alirezarezvani/claude-skills/pull/475) |
-| **jeremylongshore/claude-code-plugins-plus-skills** (1,965 stars) | Add framecraft demo video generator plugin | [PR #506](https://github.com/jeremylongshore/claude-code-plugins-plus-skills/pull/506) |
-| **github/awesome-copilot** (30,288 stars) | feat: add code-tour skill — AI-generated CodeTour walkthroug | [PR #1277](https://github.com/github/awesome-copilot/pull/1277) |
-| **tw93/Pake** (47,849 stars) | fix(cli): replace is-url validation to support network hostn | [PR #1015](https://github.com/tw93/Pake/pull/1015) |
+| **alirezarezvani/claude-skills** (11,852 stars) | feat(engineering): add code-tour skill | [PR #476](https://github.com/alirezarezvani/claude-skills/pull/476) |
+| **alirezarezvani/claude-skills** (11,852 stars) | feat(engineering): add demo-video skill | [PR #475](https://github.com/alirezarezvani/claude-skills/pull/475) |
+| **jeremylongshore/claude-code-plugins-plus-skills** (1,969 stars) | Add framecraft demo video generator plugin | [PR #506](https://github.com/jeremylongshore/claude-code-plugins-plus-skills/pull/506) |
+| **github/awesome-copilot** (30,386 stars) | feat: add code-tour skill — AI-generated CodeTour walkthroug | [PR #1277](https://github.com/github/awesome-copilot/pull/1277) |
+| **tw93/Pake** (47,899 stars) | fix(cli): replace is-url validation to support network hostn | [PR #1015](https://github.com/tw93/Pake/pull/1015) |
 | **ShuchirJ/HCGateway** (395 stars) | [Update] Docker Integration and Environment Updates | [PR #16](https://github.com/ShuchirJ/HCGateway/pull/16) |
 | **affaan-m/everything-claude-code** | code-tour skill — native port by maintainer | [da813d4](https://github.com/affaan-m/everything-claude-code/commit/da813d4) |
 <!-- CONTRIBUTIONS:END -->
