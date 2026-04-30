@@ -16,12 +16,12 @@
 | Project | What | Link |
 |:--------|:-----|:-----|
 | **xyNNN/awesome-chrome** (106 stars) | Add gTabs - AI Tab Organizer | [PR #31](https://github.com/xyNNN/awesome-chrome/pull/31) |
-| **alirezarezvani/claude-skills** (13,125 stars) | feat(engineering): add code-tour skill | [PR #476](https://github.com/alirezarezvani/claude-skills/pull/476) |
-| **alirezarezvani/claude-skills** (13,125 stars) | feat(engineering): add demo-video skill | [PR #475](https://github.com/alirezarezvani/claude-skills/pull/475) |
-| **jeremylongshore/claude-code-plugins-plus-skills** (2,057 stars) | Add framecraft demo video generator plugin | [PR #506](https://github.com/jeremylongshore/claude-code-plugins-plus-skills/pull/506) |
-| **github/awesome-copilot** (31,604 stars) | feat: add code-tour skill — AI-generated CodeTour walkthroug | [PR #1277](https://github.com/github/awesome-copilot/pull/1277) |
-| **tw93/Pake** (48,224 stars) | fix(cli): replace is-url validation to support network hostn | [PR #1015](https://github.com/tw93/Pake/pull/1015) |
-| **ShuchirJ/HCGateway** (397 stars) | [Update] Docker Integration and Environment Updates | [PR #16](https://github.com/ShuchirJ/HCGateway/pull/16) |
+| **alirezarezvani/claude-skills** (13,257 stars) | feat(engineering): add code-tour skill | [PR #476](https://github.com/alirezarezvani/claude-skills/pull/476) |
+| **alirezarezvani/claude-skills** (13,257 stars) | feat(engineering): add demo-video skill | [PR #475](https://github.com/alirezarezvani/claude-skills/pull/475) |
+| **jeremylongshore/claude-code-plugins-plus-skills** (2,064 stars) | Add framecraft demo video generator plugin | [PR #506](https://github.com/jeremylongshore/claude-code-plugins-plus-skills/pull/506) |
+| **github/awesome-copilot** (31,750 stars) | feat: add code-tour skill — AI-generated CodeTour walkthroug | [PR #1277](https://github.com/github/awesome-copilot/pull/1277) |
+| **tw93/Pake** (48,244 stars) | fix(cli): replace is-url validation to support network hostn | [PR #1015](https://github.com/tw93/Pake/pull/1015) |
+| **ShuchirJ/HCGateway** (398 stars) | [Update] Docker Integration and Environment Updates | [PR #16](https://github.com/ShuchirJ/HCGateway/pull/16) |
 | **affaan-m/everything-claude-code** | code-tour skill — native port by maintainer | [da813d4](https://github.com/affaan-m/everything-claude-code/commit/da813d4) |
 <!-- CONTRIBUTIONS:END -->
 
