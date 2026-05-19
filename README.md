@@ -15,17 +15,16 @@
 <!-- CONTRIBUTIONS:START -->
 | Project | What | Link |
 |:--------|:-----|:-----|
-| **tinyhumansai/openhuman** (15,577 stars) | Add background loop controls and usage diagnostics | [PR #1965](https://github.com/tinyhumansai/openhuman/pull/1965) |
-| **tinyhumansai/openhuman** (15,577 stars) | fix: route macOS quit through safe teardown | [PR #1841](https://github.com/tinyhumansai/openhuman/pull/1841) |
-| **tinyhumansai/openhuman** (15,577 stars) | Allow private HTTP core URLs | [PR #1765](https://github.com/tinyhumansai/openhuman/pull/1765) |
+| **tinyhumansai/openhuman** (19,426 stars) | Add background loop controls and usage diagnostics | [PR #1965](https://github.com/tinyhumansai/openhuman/pull/1965) |
+| **tinyhumansai/openhuman** (19,426 stars) | fix: route macOS quit through safe teardown | [PR #1841](https://github.com/tinyhumansai/openhuman/pull/1841) |
+| **tinyhumansai/openhuman** (19,426 stars) | Allow private HTTP core URLs | [PR #1765](https://github.com/tinyhumansai/openhuman/pull/1765) |
 | **xyNNN/awesome-chrome** (108 stars) | Add gTabs - AI Tab Organizer | [PR #31](https://github.com/xyNNN/awesome-chrome/pull/31) |
-| **alirezarezvani/claude-skills** (15,306 stars) | feat(engineering): add code-tour skill | [PR #476](https://github.com/alirezarezvani/claude-skills/pull/476) |
-| **alirezarezvani/claude-skills** (15,306 stars) | feat(engineering): add demo-video skill | [PR #475](https://github.com/alirezarezvani/claude-skills/pull/475) |
-| **jeremylongshore/claude-code-plugins-plus-skills** (2,199 stars) | Add framecraft demo video generator plugin | [PR #506](https://github.com/jeremylongshore/claude-code-plugins-plus-skills/pull/506) |
-| **github/awesome-copilot** (33,250 stars) | feat: add code-tour skill — AI-generated CodeTour walkthroug | [PR #1277](https://github.com/github/awesome-copilot/pull/1277) |
-| **tw93/Pake** (48,780 stars) | fix(cli): replace is-url validation to support network hostn | [PR #1015](https://github.com/tw93/Pake/pull/1015) |
-| **ShuchirJ/HCGateway** (401 stars) | [Update] Docker Integration and Environment Updates | [PR #16](https://github.com/ShuchirJ/HCGateway/pull/16) |
-| **affaan-m/everything-claude-code** | code-tour skill — native port by maintainer | [da813d4](https://github.com/affaan-m/everything-claude-code/commit/da813d4) |
+| **alirezarezvani/claude-skills** (15,456 stars) | feat(engineering): add code-tour skill | [PR #476](https://github.com/alirezarezvani/claude-skills/pull/476) |
+| **alirezarezvani/claude-skills** (15,456 stars) | feat(engineering): add demo-video skill | [PR #475](https://github.com/alirezarezvani/claude-skills/pull/475) |
+| **jeremylongshore/claude-code-plugins-plus-skills** (2,207 stars) | Add framecraft demo video generator plugin | [PR #506](https://github.com/jeremylongshore/claude-code-plugins-plus-skills/pull/506) |
+| **github/awesome-copilot** (33,340 stars) | feat: add code-tour skill — AI-generated CodeTour walkthroug | [PR #1277](https://github.com/github/awesome-copilot/pull/1277) |
+| **tw93/Pake** (48,819 stars) | fix(cli): replace is-url validation to support network hostn | [PR #1015](https://github.com/tw93/Pake/pull/1015) |
+| **ShuchirJ/HCGateway** (402 stars) | [Update] Docker Integration and Environment Updates | [PR #16](https://github.com/ShuchirJ/HCGateway/pull/16) |
 <!-- CONTRIBUTIONS:END -->
 
 ---
